@@ -6,21 +6,27 @@ console.log(messageExternal
 let userChoice =confirm('Welcome to my Website!');
 console.log(`The user's choice was: ${userChoice}`)
 let userInput =prompt("What is you're favorite color?");
-console.log(`User Input was ${userInput}`
-)
-let messageColor =`Great, ${userInput} is my favorite color too!`;
-alert(messageColor)
-let littleMermaidRentTime = 3;
-let brotherBearRentTime = 5;
-let herculesRentTime = 1;
-let pricePerMovie = 3;
-let totalAmountForMovies = (littleMermaidRentTime + brotherBearRentTime + herculesRentTime) * pricePerMovie
-console.log(`Total amount spent for movies is $${totalAmountForMovies}!`)
+console.log(`User Input was ${userInput}`)
+alert(`Great, ${userInput} is my favorite color too!`)
+//Exercise 3
+let littleMermaidRentTime = prompt(`What is your rent time of the movie Little Mermaid?`);
+console.log(`User wrote with ${littleMermaidRentTime}`);
+let brotherBearRentTime = prompt(`What is your rent time of the movie Brother Bear?`);
+console.log(`User wrote with ${brotherBearRentTime}`);
+let herculesRentTime = prompt(`What is your rent time of the movie Hercules?`);
+console.log(`User wrote with ${herculesRentTime}`);
+let totalPrice =3
+let totalAmountForMovies = (littleMermaidRentTime * totalPrice) + ( brotherBearRentTime * totalPrice) + (herculesRentTime * totalPrice)
+alert(`Total amount you paid for the movies is $${totalAmountForMovies}`);
 let googlePayPerHour = 400;
-let googleHoursWorked = 6;
+let googleHoursWorked = prompt(`How many hours did you work at Google?`);
+console.log(`user wrote ${googleHoursWorked}`);
 let amazonPayPerHour = 380
-let amazonHoursWorked = 4
+let amazonHoursWorked = prompt(`How many hours did you work at Amazon?`);
+console.log(`user wrote ${amazonHoursWorked}`);
 let facebookPayPerHour = 350
-let facebookHoursWorked = 10
+let facebookHoursWorked = prompt(`How many hours did you work at Facebook?`);
+console.log(`user wrote ${facebookHoursWorked}`);
 let totalAmountPaid = (googleHoursWorked * googlePayPerHour) + (amazonHoursWorked * amazonPayPerHour) + (facebookHoursWorked * facebookPayPerHour)
-console.log(`Total amount paid by companies is $${totalAmountPaid}`)
+alert(`Total amount you made is $${totalAmountPaid}`)
+//End of Lesson
