@@ -23,4 +23,4 @@ let amazonHoursWorked = 4
 let facebookPayPerHour = 350
 let facebookHoursWorked = 10
 let totalAmountPaid = (googleHoursWorked * googlePayPerHour) + (amazonHoursWorked * amazonPayPerHour) + (facebookHoursWorked * facebookPayPerHour)
-console.log(`Total amount paid by companies is $${totalAmountPaid})
+console.log(`Total amount paid by companies is $${totalAmountPaid}`)
