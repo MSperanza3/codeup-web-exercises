@@ -10,3 +10,4 @@ console.log(`User Input was ${userInput}`
 )
 let messageColor =`Great, ${userInput} is my favorite color too!`;
 alert(messageColor)
+let
