@@ -10,23 +10,17 @@ console.log(`User Input was ${userInput}`)
 alert(`Great, ${userInput} is my favorite color too!`)
 //Exercise 3
 let littleMermaidRentTime = prompt(`What is your rent time of the movie Little Mermaid?`);
-console.log(`User wrote with ${littleMermaidRentTime}`);
 let brotherBearRentTime = prompt(`What is your rent time of the movie Brother Bear?`);
-console.log(`User wrote with ${brotherBearRentTime}`);
 let herculesRentTime = prompt(`What is your rent time of the movie Hercules?`);
-console.log(`User wrote with ${herculesRentTime}`);
-let totalPrice =3
+let totalPrice = prompt(`How much did it cost to rent each movie?`)
 let totalAmountForMovies = (littleMermaidRentTime * totalPrice) + ( brotherBearRentTime * totalPrice) + (herculesRentTime * totalPrice)
 alert(`Total amount you paid for the movies is $${totalAmountForMovies}`);
-let googlePayPerHour = 400;
+let googlePayPerHour = prompt(`How much did you make at Google?`);
 let googleHoursWorked = prompt(`How many hours did you work at Google?`);
-console.log(`user wrote ${googleHoursWorked}`);
-let amazonPayPerHour = 380
+let amazonPayPerHour = prompt(`How much did you make at Amazon?`)
 let amazonHoursWorked = prompt(`How many hours did you work at Amazon?`);
-console.log(`user wrote ${amazonHoursWorked}`);
-let facebookPayPerHour = 350
+let facebookPayPerHour = prompt(`How much did you make at Facebook?`)
 let facebookHoursWorked = prompt(`How many hours did you work at Facebook?`);
-console.log(`user wrote ${facebookHoursWorked}`);
 let totalAmountPaid = (googleHoursWorked * googlePayPerHour) + (amazonHoursWorked * amazonPayPerHour) + (facebookHoursWorked * facebookPayPerHour)
 alert(`Total amount you made is $${totalAmountPaid}`)
 //End of Lesson
