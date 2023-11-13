@@ -16,4 +16,11 @@ let herculesRentTime = 1;
 let pricePerMovie = 3;
 let totalAmountForMovies = (littleMermaidRentTime + brotherBearRentTime + herculesRentTime) * pricePerMovie
 console.log(`Total amount spent for movies is $${totalAmountForMovies}!`)
-
+let googlePayPerHour = 400;
+let googleHoursWorked = 6;
+let amazonPayPerHour = 380
+let amazonHoursWorked = 4
+let facebookPayPerHour = 350
+let facebookHoursWorked = 10
+let totalAmountPaid = (googleHoursWorked * googlePayPerHour) + (amazonHoursWorked * amazonPayPerHour) + (facebookHoursWorked * facebookPayPerHour)
+console.log(`Total amount paid by companies is $${totalAmountPaid})
