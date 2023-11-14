@@ -75,9 +75,9 @@ console.log(calculateTip(.10, 20))
 //  */
 let totalBill = parseInt(prompt('What was the total bill for your meal?'))
 let totalTip = parseInt(prompt('What Percentage would you like to tip?')) / 100
-const totalTipAmount = calculateTip(totalTip, totalBill)
+const totalTipAmount = calculateTip(totalTip, totalBill).toFixed(2)
 alert(`You're total amount you should tip is $${totalTipAmount}`)
-// /**
+// /**g
 //  * TODO:
 //  * Create a function named `applyDiscount`. This function should accept a price
 //  * (before a discount is applied), and a discount percentage (a number between 0
@@ -90,5 +90,7 @@ alert(`You're total amount you should tip is $${totalTipAmount}`)
  // * > applyDiscount(originalPrice, discountPercent) // 80
 // *
  // * > applyDiscount(45.99, 0.12) // 40.4712
-const applyDiscount = (originalPrice, discountPercent) => console.log(originalPrice * discountPercent)
+const applyDiscount = (originalPrice, discountPercent) => {
+    return originalPrice - (originalPrice * discountPercent).toFixed(2)
+}
 console.log(applyDiscount(20, .15))
