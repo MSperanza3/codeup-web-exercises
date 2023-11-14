@@ -13,20 +13,26 @@ const randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 // console.log(`User inputs ${analyzeColor}`);
 
-if (randomColor === 'red') {
+switch (randomColor) {
+    case "red":
     console.log('The color is red.');
-} else if (randomColor === 'orange') {
-    console.log('The color is orange.');
-} else if (randomColor === 'yellow') {
-    console.log('The color is yellow.');
-} else if (randomColor === 'green') {
-    console.log('The color is green.');
-} else if (randomColor === 'blue') {
-    console.log('The color is blue.');
-} else if (randomColor === 'indigo') {
-    console.log('The color is indigo.');
-} else if (randomColor === 'violet') {
-    console.log('The color is violet.');
-} else {
-    console.log('Unknown color.');
+    break;
+    case "orange":
+        console.log('The color is orange.');
+        break;
+    case "yellow":
+        console.log('The color is yellow.');
+        break;
+    case "green":
+        console.log('The color is green.');
+        break;
+    case "blue":
+        console.log('The color is blue.');
+        break;
+    case "indigo":
+        console.log('The color is indigo.');
+        break;
+    case "violet":
+        console.log('The color is violet.');
+        break;
 }
