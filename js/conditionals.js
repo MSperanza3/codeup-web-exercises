@@ -38,23 +38,23 @@ switch (randomColor) {
 }
 
 let totalBill = parseInt(prompt('What was the total bill'))
-let luckyNumber = parseInt(prompt('What was your lucky number'))
-if (luckyNumber === 0) {
-    console.log(luckyNumber)
-} else if (luckyNumber === 1) {
-    console.log(luckyNumber = 10)
-} else if (luckyNumber === 2) {
-    console.log(luckyNumber = 25)
-} else if (luckyNumber === 3) {
-    console.log(luckyNumber = 35)
-} else if (luckyNumber === 4) {
-    console.log(luckyNumber = 50)
-} else if (luckyNumber === 5) {
-    console.log(luckyNumber = 100)
+let luckyNum = parseInt(prompt('What was your lucky number'))
+if (luckyNum === 0) {
+    console.log(luckyNum)
+} else if (luckyNum === 1) {
+    console.log(luckyNum = 10)
+} else if (luckyNum === 2) {
+    console.log(luckyNum = 25)
+} else if (luckyNum === 3) {
+    console.log(luckyNum = 35)
+} else if (luckyNum === 4) {
+    console.log(luckyNum = 50)
+} else if (luckyNum === 5) {
+    console.log(luckyNum = 100)
 } else {
     console.log("Error")
 }
-alert(`You're discount was ${luckyNumber}% and the total pay will be $${totalBill - (totalBill * (luckyNumber / 100))}`)
+alert(`You're discount was ${luckyNum}% and the total pay will be $${totalBill - (totalBill * (luckyNum / 100)).toFixed(2)}`);
 
 //
 // /**
@@ -66,7 +66,21 @@ alert(`You're discount was ${luckyNumber}% and the total pay will be $${totalBil
 //  * price before the discount was, and what their price after the discount is.
 //  */
 // // Generate a random number between 0 and 6
-// // const luckyNumber = Math.floor(Math.random() * 6);
+// const luckyNumber = Math.floor(Math.random() * 6);
+// if (luckyNumber === 0) {
+//     console.log(luckyNumber)
+// } else if (luckyNumber === 1) {
+//     console.log(luckyNumber = 10)
+// } else if (luckyNumber === 2) {
+//     console.log(luckyNumber = 25)
+// } else if (luckyNumber === 3) {
+//     console.log(luckyNumber = 35)
+// } else if (luckyNumber === 4) {
+//     console.log(luckyNumber = 50)
+// } else if (luckyNumber === 5) {
+//     console.log(luckyNumber = 100)
+// } else {
+//     console.log("Error")
 //
 // /**
 //  * TODO:
@@ -85,4 +99,24 @@ alert(`You're discount was ${luckyNumber}% and the total pay will be $${totalBil
 //  *
 //  * Can you refactor your code to use functions?
 //  * HINT: The way we prompt for a value could be improved
-//  */
+let funNumber = confirm(`Would you like to enter a number?`)
+if (funNumber === true) {
+    let threeChoices = parseInt(prompt(`What is you're number?`))
+    if (threeChoices > 100) {
+        alert(`You're number is greater then 100`)
+    } else {
+        alert(`You're number is less then 100`)
+    } if (threeChoices % 2 === 0) {
+        alert(`You're number is even`)
+    } else {
+        alert(`You're number is odd`)
+    } if (threeChoices > 0) {
+        alert(`You're number is Positive`)
+    } else if (threeChoices < 0) {
+        alert(`You're number is Negative`)
+    } else {
+        alert(`You're number is 0`)
+    }
+} else if (funNumber === false) {
+    alert(`Oh, that's too bad`)
+}
