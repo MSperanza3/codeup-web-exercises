@@ -63,7 +63,9 @@ console.log(isTwo(random))
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
 
-const calculateTip =(tip, foodPrice) => console.log(tip * foodPrice)
+const calculateTip =(tip, foodPrice) => {
+    return (tip * foodPrice);
+}
 console.log(calculateTip(.10, 20))
 // /**
 //  * TODO:
@@ -73,7 +75,8 @@ console.log(calculateTip(.10, 20))
 //  */
 let totalBill = parseInt(prompt('What was the total bill for your meal?'))
 let totalTip = parseInt(prompt('What Percentage would you like to tip?')) / 100
-console.log(calculateTip(totalTip, totalBill))
+const totalTipAmount = calculateTip(totalTip, totalBill)
+alert(`You're total amount you should tip is $${totalTipAmount}`)
 // /**
 //  * TODO:
 //  * Create a function named `applyDiscount`. This function should accept a price
