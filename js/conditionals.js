@@ -82,26 +82,16 @@ let discountMultiplier = calculateLuckyNumber(luckyNumber);
 let totalAmountDue = totalBill - (totalBill * discountMultiplier);
 console.log(totalAmountDue);
 
-alert(`Your discount was ${discountMultiplier * 100}% and the total payment will be $${totalAmountDue.toFixed(2)}`);
+alert(`Congrats! your lucky number was ${luckyNumber}! Your discount was ${discountMultiplier * 100}% and the total payment will be $${totalAmountDue.toFixed(2)}`);
 
-let funNumber = confirm(`Would you like to enter a number?`)
-if (funNumber === true) {
-    let threeChoices = parseInt(prompt(`What is you're number?`))
-    if (threeChoices > 100) {
-        alert(`You're number is greater then 100`)
-    } else {
-        alert(`You're number is less then 100`)
-    } if (threeChoices % 2 === 0) {
-        alert(`You're number is even`)
-    } else {
-        alert(`You're number is odd`)
-    } if (threeChoices > 0) {
-        alert(`You're number is Positive`)
-    } else if (threeChoices < 0) {
-        alert(`You're number is Negative`)
-    } else {
-        alert(`You're number is 0`)
+const userContinue = confirm(`Do you want to enter a number?`)
+
+if(userContinue) {
+    const userNumber = prompt(`Enter a Number`);
+    if (!isNaN(userNumber)) {
+        const isEven = userNumber % 2 === 0;
+        const isPlus100 = parseInt(userNumber) + 100;
+        const isLessThenZero = userNumber >= 0;
+        alert(`${userNumber} is ${isEven ? 'even' : 'odd'}, 100 + ${userNumber} = ${isPlus100}, and ${userNumber} is ${isLessThenZero ? 'Positive' : 'Negative'}`)
     }
-} else if (funNumber === false) {
-    alert(`Oh, that's too bad`)
 }
