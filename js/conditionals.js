@@ -27,16 +27,10 @@ function analyzeColor(randomColor) {
 }
 console.log(`Your color is ${randomColor}`);
 analyzeColor();
-// let analyzeColor = prompt(`Give me a Color and I will tell you about it`);
-//
-// if (analyzeColor === 'red') {
-//     alert(`Red is the color of blood`);
-// } else if (analyzeColor === 'blue') {
-//     alert(`Blue is the color of the sky`);
-// } else {
-//     alert(`Wow, never heard of ${analyzeColor} before!`);
-// }
-// console.log(`User inputs ${analyzeColor}`);
+
+// const userColor = prompt(`Give me a Color and I will tell you about it`);
+// const colorMessage = analyzeColor(userColor)
+// alert(colorMessage);
 
 // let totalBill = parseInt(prompt('What was the total bill'))
 // let luckyNum = parseInt(prompt('What was your lucky number'))
