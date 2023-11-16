@@ -34,6 +34,7 @@ for (i = 0; 1 < 10; i++) {
     }
     console.log(`${randomNumber} is ${result}` )
 }
+
 for (let i = 1; i <= 9; i++) {
     let line = "";
 
@@ -42,6 +43,7 @@ for (let i = 1; i <= 9; i++) {
     }
     console.log(line);
 }
+
 let numberToStop = 0
 for (let i = 100; i >= 0; i -= 5) {
     console.log(i);
