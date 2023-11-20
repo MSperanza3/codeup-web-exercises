@@ -51,8 +51,8 @@ console.log(names.length)
 
 console.log(`The names in the array are: ${names[0]}, ${names[1]}, ${names[2]}, and ${names[3]}.`)
 
-for (let i = 0; i < names.length; i++) {
-    console.log(`Hi, my name is ${names[i]}`)
+for (let name of names) {
+    console.log(`Hi, my name is ${name}`)
 }
 names.forEach(names => console.log(`Here are the names again: ${names}`))
 
