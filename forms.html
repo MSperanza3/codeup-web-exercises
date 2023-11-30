@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Veridian Dynamics</title>
+  <style>
+    img {
+      margin-left: 1px;
+      margin-right: 1px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
+  </style>
+  <style>
+    header {
+      background-color: slategrey;
+    }
+  </style>
 </head>
 <body>
-
+<header id="header">
+<h1> <img src="img/Veridian Dynamics.png" height="60" width="60"/>Veridian Dynamics</h1>
+</header>
+<h2>New User Form</h2>
+<section id="register">
+  <form method="POST" action="https://request-inspector.glitch.me/">
+    <input id="email" name="email" type="text" placeholder="Email">
+    <br>
+    <input id="password" name="password" type="password" placeholder="Password">
+    <br><br>
+    <textarea name="bio" placeholder="Tell us a little bit about yourself" rows="7"></textarea>
+    <br>
+    <h3>How did you hear about us?</h3>
+    <div id="where-did-you-hear">
+      <label for="billboard">Billboard
+        <input id="billboard" type="checkbox" name="billboard" value="a"><br>
+      </label>
+      <label for="radio">Radio Advertisement
+        <input id="radio" type="checkbox" name="radio advertisement" value="b"><br>
+      </label>
+      <label for="internet">Internet Advertisement
+        <input id="internet" type="checkbox" name="internet advertisement" value="c"><br>
+      </label>
+      <label for="other">Other
+        <input id="other" type="checkbox" name="other" value="d"><br>
+      </label>
+    </div>
+    <br>
+    <div id="dropdown">
+      <h3>What browser are you using?</h3>
+      <select name="web_browser" id="web_browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="safari">Safari</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <br>
+    <button type="submit">Register</button>
+  </form>
+</section>
+<footer>
+  <p>© 2023 Veridian Dynamics, Incf</p>
+</footer>
 </body>
 </html>
