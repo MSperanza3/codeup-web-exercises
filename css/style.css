@@ -1,0 +1,24 @@
+img {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.header h1{
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+.header p {
+    color: black;
+    text-align: center;
+
+}
+.header2 {
+    color: blue;
+    text-decoration: underline;
+}
+body {
+
+}
+
