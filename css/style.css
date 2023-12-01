@@ -1,4 +1,4 @@
-img {
+.image-vision {
     margin-left: 1px;
     margin-right: 1px;
     margin-top: 1px;
@@ -19,6 +19,19 @@ img {
     text-decoration: underline;
 }
 body {
-
+    background-image: url("../img/simple-background.jpg");
+    background-position: center;
+    background-size: auto;
+    font-family: Tahoma, Arial, Verdana;
+}
+ul {
+    list-style: square;
+}
+.tbproducts {
+    font-family: "Bodoni 72";
+    padding: 10px;
+}
+.bottom:hover {
+    color: darkred;
 }
 
