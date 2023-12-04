@@ -1,7 +1,35 @@
 body, html {
     height: 100%;
-    width: 100%;
+    width: 50%;
     padding: 0;
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
+}
+.message-info {
+    color: #4D46A2;
+    background-color: #CDDEFC;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.message-success {
+    color: #176D37;
+    background-color: #CFF3DA;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.message-warning {
+    color: #95832C;
+    background-color: #FCFBC9;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.message-error {
+    color: #862138;
+    background-color: #FAD3D7;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
