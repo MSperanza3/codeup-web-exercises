@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+.pizza-img {
+    position: relative;
+    align-text: center;
+    color: black;
+}
+.pizza-world-h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 100%;
+    opacity: 75%;
+}
